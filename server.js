@@ -20,6 +20,10 @@ app.post('/process-single', (req, res) => {
 
 });
 
+app.get("/", (req, res) => {
+    res.send("This is sorted api Assessments");
+});
+
 //Endpoint processing sortConcurrently
 app.post("/process-concurrent", (req, res) => {
   const startTime = performance.now();
